@@ -1,0 +1,22 @@
+{
+  "name": "jquery.motionevents",
+  "main": "jquery.motionevents.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/herrmannplatz/jquery.motionevents",
+  "authors": [
+    "René Herrmann <rene@herrmannplatz.de>"
+  ],
+  "description": "A jQuery plugin to provide shorthands for transtion and animtion events",
+  "keywords": [
+    "events",
+    "transtion",
+    "animation",
+    "shorthands",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7.0"
+  },
+  "licenses": "MIT"
+}
