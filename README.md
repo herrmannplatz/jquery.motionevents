@@ -14,8 +14,9 @@ $('div').transitionend(function(e) {
   // do some stuff
   return true;
 });
+```
 
-To listen to a specific transition e.g. when using multiple properties
+To listen to a specific transition, e.g. when using multiple properties, provide an object with the properties as keys.
 
 ```javascript
 $('div').transitionend({
@@ -28,3 +29,4 @@ $('div').transitionend({
     return true;
   }
 });
+```
