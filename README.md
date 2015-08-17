@@ -1,6 +1,6 @@
 # jQuery Motion Events Plugin
 
-Shorthands for transtionend and animationend events.
+Shorthands for transtion and animation events.
 
 Usage
 ------
