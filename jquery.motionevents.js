@@ -31,17 +31,17 @@
 
   function registerEvent(elem, event, handler, validator) {
     if (typeof handler === 'function') {
-        return elem.each(function() {
-          on(this, event, handler);
-        });
+      return elem.each(function() {
+        on(this, event, handler);
+      });
     }
 
     if (typeof handler === 'object') {
-        return elem.each(function() {
-          for (var property in handler) {
-            on(this, event, handler[property], validator(property));
-          }
-        });
+      return elem.each(function() {
+        for (var property in handler) {
+          on(this, event, handler[property], validator(property));
+        }
+      });
     }
   }
 
