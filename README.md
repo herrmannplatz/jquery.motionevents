@@ -14,6 +14,11 @@ $('div').transitionend(function(e) {
   // do some stuff
   return true;
 });
+
+$('div').animationend(function(e) {
+  // do some stuff
+  return true;
+});
 ```
 
 To listen to a specific transition, e.g. when using multiple properties, provide an object with the properties as keys.
@@ -25,6 +30,21 @@ $('div').transitionend({
     return true;
   },
   color: function(e) {
+    // do some stuff
+    return true;
+  }
+});
+```
+
+Same applies for animations. Just specify the animation name in the object passed to the function. This might be useful when you use different animations to create one big animation.
+
+```javascript
+$('div').animationend({
+  fadein: function(e) {
+    // do some stuff
+    return true;
+  },
+  fadeout: function(e) {
     // do some stuff
     return true;
   }
